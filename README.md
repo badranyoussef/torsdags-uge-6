@@ -1,1 +1,1 @@
-# torsdags-uge-6
+kopier kode herinde
