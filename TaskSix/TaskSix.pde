@@ -1,7 +1,7 @@
 int red = #E82828;
 int yellow = #E8D828;
 int green = #63D832;
-int lightOff = 0;
+int lightOff = 50;
 
 
 int go;
@@ -13,14 +13,16 @@ int ready;
 void setup(){
 size(400,400);
 background(200);
-fill(50);
+fill(20);
 rect(50,50,100,300);
 frameRate(1);
+
 
 }
 
 void draw(){
-switch(frameCount%4){
+
+  switch(frameCount%3){  
   case 0:
     stop = red;
     ready = lightOff;
@@ -30,8 +32,8 @@ switch(frameCount%4){
     stop = red;
     ready = yellow;
     go = lightOff;
-  break;
-    case 2:
+    break;
+  case 2:
     stop = lightOff;
     ready = lightOff;
     go = green;
